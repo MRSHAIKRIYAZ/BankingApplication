@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Home | LARA Bank</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .home-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 420px;
+      text-align: center;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+      color: #0277bd;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: block;
+      margin: 10px 0;
+      padding: 10px 16px;
+      background-color: #0288d1;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #01579b;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    input[type="submit"] {
+      background-color: #d32f2f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #b71c1c;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="home-container">
+    <h1> Welcome to your Account</h1>
+
+    <a href="Checkbalance"> Check Balance</a>
+    <a href="ChangePwd.html"> Change Password</a>
+    <a href="Transfer.html"> Transfer Amount</a>
+    <a href="GetStatement"> Get Statement</a>
+    <a href="ApplyLoan.html"> Apply for Loan</a>
+
+    <form action="Logout">
+      <input type="submit" value=" Logout" />
+    </form>
+  </div>
+
+  <script>
+    console.log("Home page loaded ");
+  </script>
+</body>
+</html>

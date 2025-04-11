@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Statement Retrieval Failed | LARA Bank</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .fail-container {
+      background-color: white;
+      padding: 50px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 600px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+      color: #d32f2f;
+      font-size: 24px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
+      background-color: #0288d1;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #01579b;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="fail-container">
+    <h1>⚠️ Could not retrieve the statement. Please try again later.</h1>
+    <a href="Home.html">Back to Home</a>
+  </div>
+
+  <script>
+    console.log("Statement failure page loaded ");
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Change Password | LARA Bank</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 420px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0277bd;
+      margin-bottom: 25px;
+    }
+
+    form label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #0288d1;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      margin-top: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #01579b;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Set Your New Password</h2>
+    <form action="ChangePassword" onsubmit="return validatePasswords()">
+      <label>New Password</label>
+      <input type="password" name="npwd" id="npwd" required />
+
+      <label>Confirm Password</label>
+      <input type="password" name="cpwd" id="cpwd" required />
+
+      <input type="submit" value="Change Password" />
+    </form>
+  </div>
+
+  <script>
+    function validatePasswords() {
+      const npwd = document.getElementById("npwd").value;
+      const cpwd = document.getElementById("cpwd").value;
+
+      if (npwd !== cpwd) {
+        alert("Passwords do not match!");
+        return false;
+      }
+
+      if (npwd.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+      }
+
+      alert("Password changed successfully!");
+      return true;
+    }
+
+    console.log("Change password page loaded ");
+  </script>
+</body>
+</html>

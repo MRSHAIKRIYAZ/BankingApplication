@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Welcome Page | LARA Bank</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      width: 350px;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #1e88e5;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background-color: #1e88e5;
+      padding: 12px 24px;
+      margin: 10px 0;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #1565c0;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container fade-in">
+    <h3>WELCOME TO LARA BANK</h3>
+    <a href="Register.html">Click here to Register</a><br>
+    <a href="Login.html">Click here to Login</a>
+  </div>
+
+  <script>
+    // Optional: you can add dynamic effects or alerts here
+    console.log("Welcome page loaded successfully!");
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//WebContent/ApplyLoan.html=UTF-8
+encoding//WebContent/BalanceFail.html=UTF-8
+encoding//WebContent/BalanceView.jsp=UTF-8
+encoding//WebContent/ChangePwd.html=UTF-8
+encoding//WebContent/ChangePwdFail.html=UTF-8
+encoding//WebContent/ChangePwdSuccess.html=UTF-8
+encoding//WebContent/Error.html=UTF-8
+encoding//WebContent/FailureReg.html=UTF-8
+encoding//WebContent/Home.html=UTF-8
+encoding//WebContent/LoanFail.html=UTF-8
+encoding//WebContent/Register.html=UTF-8
+encoding//WebContent/StatementFail.html=UTF-8
+encoding//WebContent/SuccessReg.html=UTF-8
+encoding//WebContent/Transfer.html=UTF-8
+encoding//WebContent/TransferFail.html=UTF-8
+encoding//WebContent/TransferSuccess.html=UTF-8

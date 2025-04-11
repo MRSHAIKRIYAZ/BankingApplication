@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Registration Successful | LARA Bank</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .success-container {
+      background-color: white;
+      padding: 40px 50px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 700px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+      color: #2e7d32;
+      font-size: 26px;
+    }
+
+    h3 {
+      color: #333;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 22px;
+      background-color: #0288d1;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #01579b;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="success-container">
+    <h1> Registration to the bank is Successful</h1>
+    
+    <h3>To create another account please click on the below link:</h3>
+    <a href="Register.html">Click here to Re-register</a><br><br>
+
+    <h3>To login to your account click on the below link:</h3>
+    <a href="Login.html">Click here to Login</a>
+  </div>
+
+  <script>
+    console.log("Registration success page loaded ");
+  </script>
+</body>
+</html>

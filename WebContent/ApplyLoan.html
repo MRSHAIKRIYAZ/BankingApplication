@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Loan Page | LARA Bank</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loan-container {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: center;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h2 {
+      color: #0277bd;
+      margin-bottom: 25px;
+    }
+
+    a {
+      display: block;
+      background-color: #0288d1;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 10px 0;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #01579b;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loan-container">
+    <h2>Select the loan you wish to apply for</h2>
+    
+    <a href="Loan?type=education"> Educational Loan</a>
+    <a href="Loan?type=marriage"> Marriage Loan</a>
+    <a href="Loan?type=house"> House Loan</a>
+    <a href="Loan?type=gold"> Gold Loan</a>
+    <a href="Loan?type=car"> Car Loan</a>
+  </div>
+
+  <script>
+    console.log("Loan selection page loaded ✅");
+  </script>
+</body>
+</html>
